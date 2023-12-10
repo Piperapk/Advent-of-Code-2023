@@ -2,7 +2,6 @@ import fs from "fs";
 
 const data = fs.readFileSync("./day2-input.txt", "utf-8").trim().split("\n");
 
-// Game valid if only 12 red cubes, 13 green cubes, and 14 blue cubes
 let gameTotal = 0;
 
 for (let i = 0; i < data.length; i++) {
