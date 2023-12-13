@@ -20,11 +20,9 @@ for (let i = 0; i < numbersForEachCard.length; i++) {
   const currentCard = numbersForEachCard[i];
   let winningNumbers = 0;
 
-  console.log(currentCard);
   for (let number of currentCard.scratchedNumbers) {
     const isWinning = currentCard.winningNumbers.includes(number);
     winningNumbers += isWinning ? 1 : 0;
-    //console.log(isWinning, number);
   }
   const points =
     winningNumbers <= 1 ? winningNumbers : 2 ** (winningNumbers - 1);
